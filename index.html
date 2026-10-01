@@ -3,102 +3,67 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Euna Park</title>
-  <meta
-    name="description"
-    content="Euna Park's academic homepage."
-  >
-
+  <meta name="description" content="Euna Park's academic homepage.">
   <style>
+    :root {
+      color-scheme: light;
+    }
+
     body {
-      max-width: 720px;
-      margin: 72px auto;
-      padding: 0 24px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 17px;
-      line-height: 1.65;
-      color: #222;
+      max-width: 52rem;
+      margin: 1.5rem;
+      background: #fff;
+      color: #000;
+      font-family: serif;
+      font-size: 1rem;
+      line-height: 1.4;
     }
 
     h1 {
-      margin-bottom: 0.2rem;
-      font-size: 2.3rem;
-      font-weight: normal;
+      font-size: 1.5rem;
     }
 
     h2 {
-      margin-top: 2.8rem;
-      font-size: 1.25rem;
+      margin-top: 1.5rem;
+      font-size: 1rem;
     }
 
-    nav {
-      margin: 1.5rem 0 3rem;
-    }
-
-    nav a {
-      margin-right: 1rem;
-    }
-
-    a {
+    a,
+    a:visited {
       color: inherit;
-      text-underline-offset: 3px;
+      text-decoration: underline;
     }
 
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    footer {
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    @media (max-width: 600px) {
-      body {
-        margin: 40px auto;
-      }
+    a:focus-visible {
+      outline: 1px solid currentColor;
+      outline-offset: 2px;
     }
   </style>
 </head>
-
 <body>
-  <header>
+  <main>
     <h1>Euna Park</h1>
 
     <p>
-      Mathematics student.
+      Mathematics student.<br>
+      Email: <a href="mailto:euna@kaist.ac.kr">euna@kaist.ac.kr</a>
     </p>
 
-    <nav>
-      <a href="#research">Research</a>
-      <a href="#papers">Papers</a>
-      <a href="cv.pdf">CV</a>
-      <a href="mailto:euna@kaist.ac.kr">Email</a>
-    </nav>
-  </header>
+    <p><a href="cv.pdf">CV</a></p>
 
-  <main>
-    <section id="research">
-      <h2>Research interests</h2>
+    <h2>Research interests</h2>
+    <p>
+      Higher category theory, homotopy theory and higher algebra,
+      particularly higher Morita theory and descent.
+    </p>
 
-      <p>
-        My interests include category theory, algebra, and topology.
-      </p>
-    </section>
-
-    <section id="papers">
-      <h2>Papers and notes</h2>
-
-      <p>
-        Nothing here yet.
-      </p>
-    </section>
+    <h2>Notes</h2>
+    <!-- Upload these PDFs next to index.html. The link text can be changed to each note's title. -->
+    <ul>
+      <li><a href="noether.pdf">noether.pdf</a></li>
+      <li><a href="snakelemma.pdf">snakelemma.pdf</a></li>
+    </ul>
   </main>
-
-  <footer>
-    <p>Last updated October 2026.</p>
-  </footer>
 </body>
 </html>
